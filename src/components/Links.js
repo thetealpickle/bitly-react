@@ -15,7 +15,7 @@ class Links extends Component {
 
 	render() {
 		return(
-			<div>
+			<div className='links--container'>
 				{this.props.links.map(this.createLink)}
 			</div>
 		);
