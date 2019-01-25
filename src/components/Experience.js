@@ -19,10 +19,20 @@ class Experience extends Component {
 		this.state = { spans: 0 };
 	}
 
-	experiences = [jpg0, jpg1, jpg2, png0, png1, jpg3, jpg4, jpg5, jpg6, jpg7];	
+	experiences = [{type:'image', ref:jpg0}, 
+			{type: 'image', ref: jpg1}, 
+			{type: 'image', ref: jpg2}, 
+			{type: 'image', ref: png0}, 
+			{type: 'image', ref: png1}, 
+			{type: 'image', ref: jpg3}, 
+			{type: 'image', ref: jpg4}, 
+			{type: 'image', ref: jpg5}, 
+			{type: 'image', ref: jpg6}, 
+			{type: 'image', ref: jpg7}, 
+			];
 
 	createExperienceCard = (experience) => {
-		return ( <ExperienceCard image={experience} />);
+		return ( <ExperienceCard obj={experience} />);
 	}
 
 	render() {

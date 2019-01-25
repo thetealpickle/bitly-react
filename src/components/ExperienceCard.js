@@ -16,6 +16,18 @@ class ExperienceCard extends Component {
                 this.setState({ spans });
         }
 
+	setImageOrVideo = () => {
+		if (this.props.obj.type == 'image') {
+			return (<img ref={this.imageRef} src={this.props.obj.ref}/>);
+		} else {
+			return (
+				<video ref={this.imageRef} controls>
+					<source src={this.props.obj.ref} type='video/mov' />
+				</video>
+			);
+		}
+	}
+	
         componentDidMount() {
 		this.imageRef.current.addEventListener('load', this.setSpans);
         }	
@@ -23,7 +35,7 @@ class ExperienceCard extends Component {
 	render() {
 		return(
 			<div style={{gridRowEnd: `span ${this.state.spans}`}}>
-				<img ref={this.imageRef} src={this.props.image}/>
+				{this.setImageOrVideo()}
 			</div>
 		);
 	}
