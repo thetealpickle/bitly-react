@@ -9,6 +9,7 @@ class About extends Component {
 	render() {
 		return(
 		<div id ="about--container">
+			<h2>Bitly Edition</h2>
         		<p>January 2019, I was a Bitly Wintern [A winter intern, hehe, do you get it?].<br /><br />
 
         		Throughout my time at Bitly I had the opportunity to explore frontend web development.<br />

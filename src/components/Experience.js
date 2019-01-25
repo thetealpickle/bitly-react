@@ -38,6 +38,7 @@ class Experience extends Component {
 	render() {
 		return(
 			<div className='experience--overview'>
+				<h2>Experiences</h2>
 				<div className='experiences--container'>
 					{this.experiences.map(this.createExperienceCard)}
 				</div>
