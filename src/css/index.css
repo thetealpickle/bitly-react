@@ -12,3 +12,75 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+html{
+        background-color: #FFF;
+    color: #000;
+}
+
+h1, h2 {
+
+  font-family: 'Caveat', sans-serif;
+        font-size: 3em;
+        text-align: left;
+
+        margin: 4% 7% 0% 7%;
+    letter-spacing: .10em;
+}
+
+h2 {
+        margin-top: 0%;
+        font-size: 1.5em;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    font-weight: 400;
+
+
+    letter-spacing: .10em;
+
+
+    padding: 2% 10%;
+    text-align: center-left;
+
+}
+
+
+a {
+        text-decoration: none;
+        color: #1CC8CA;
+}
+
+a:hover {
+
+        color: white;
+        background-color: black;
+
+        padding: 1.5em 1em;
+}
+
+ul {
+  list-style: none;
+        margin: 3% 6.5% 0% 6.5%;
+        padding: 0%;
+}
+
+ol {
+        margin: 0% 6.5%;
+}
+
+ol p {
+        padding: 0%;
+}
+
+li, h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: .85em;
+
+    padding: 0% 1%;
+                float: left;
+}
+
+
